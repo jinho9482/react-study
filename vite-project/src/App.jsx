@@ -114,7 +114,7 @@ const keys = [...Object.keys(teams[0])]; // teams[0] 의 key값들을 array로 r
 // console.log(...Object.keys(teams[0]), (rank = 1000)); object의 value값을 바꿔준다.
 function App() {
   console.log(Object.keys(teams[0]));
-  console.log({ ...teams[0] });
+  console.log({ ...teams[0], rank: 1000 }); // rank값을 1000으로 바꿀 수 있다.
   const [count, setCount] = useState(0);
   const [search, setSearch] = useState("");
   const [input, setInput] = useState("");
